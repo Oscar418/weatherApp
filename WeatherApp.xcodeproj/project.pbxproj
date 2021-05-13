@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A22E3DA264D5C5400761A29 /* forecastJSON.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 2A22E3D9264D5C5400761A29 /* forecastJSON.JSON */; };
+		2A22E3DC264D663800761A29 /* weatherDataJSON.JSON in Resources */ = {isa = PBXBuildFile; fileRef = 2A22E3DB264D663800761A29 /* weatherDataJSON.JSON */; };
 		2A6726852645586100B01B7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6726842645586100B01B7D /* AppDelegate.swift */; };
 		2A6726872645586100B01B7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6726862645586100B01B7D /* SceneDelegate.swift */; };
 		2A67268C2645586100B01B7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A67268A2645586100B01B7D /* Main.storyboard */; };
@@ -63,6 +65,8 @@
 
 /* Begin PBXFileReference section */
 		13562E7882156EB4C54C54A9 /* Pods-WeatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeatherApp.release.xcconfig"; path = "Target Support Files/Pods-WeatherApp/Pods-WeatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		2A22E3D9264D5C5400761A29 /* forecastJSON.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forecastJSON.JSON; sourceTree = "<group>"; };
+		2A22E3DB264D663800761A29 /* weatherDataJSON.JSON */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weatherDataJSON.JSON; sourceTree = "<group>"; };
 		2A6726812645586100B01B7D /* WeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A6726842645586100B01B7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A6726862645586100B01B7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +143,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A22E3D6264D59A300761A29 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				2A22E3DB264D663800761A29 /* weatherDataJSON.JSON */,
+				2A22E3D9264D5C5400761A29 /* forecastJSON.JSON */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		2A6726782645586100B01B7D = {
 			isa = PBXGroup;
 			children = (
@@ -293,6 +306,7 @@
 		2A92FD7C264C10AE00E856AB /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2A22E3D6264D59A300761A29 /* JSON */,
 				2A92FD7D264C10C200E856AB /* MessageLibrary.swift */,
 				2A92FD7F264C10E200E856AB /* Reachability.swift */,
 				2A92FD81264C112000E856AB /* DependencyContainer.swift */,
@@ -454,6 +468,8 @@
 			files = (
 				2A92FD92264C172600E856AB /* ForecastTableViewCell.xib in Resources */,
 				2A6726912645586600B01B7D /* LaunchScreen.storyboard in Resources */,
+				2A22E3DC264D663800761A29 /* weatherDataJSON.JSON in Resources */,
+				2A22E3DA264D5C5400761A29 /* forecastJSON.JSON in Resources */,
 				2A67268E2645586600B01B7D /* Assets.xcassets in Resources */,
 				2A67268C2645586100B01B7D /* Main.storyboard in Resources */,
 			);
