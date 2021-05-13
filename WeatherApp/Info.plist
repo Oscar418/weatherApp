@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Turning on location allows us to show weather conditions in your current location</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Turning on location allows us to show weather conditions in your current location</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

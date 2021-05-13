@@ -17,14 +17,21 @@ class HomeViewController: UIViewController {
     var weatherData: Weather?
     var forecastDictionary = [String: String]()
     let dependancyContainer = DependencyContainer.container()
-    let defaultCity = "Johannesburg"
+    let currentLocation = GetCurrentLocation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter = dependancyContainer.resolve(WeatherPresentable.self)
         presenter?.view = self
         setupForecastTableViewCell()
-        fetchWeather()
+        getCurrentLocation()
+    }
+    
+    func getCurrentLocation() {
+        currentLocation.getUserCurrentLocation(viewController: self)
+        currentLocation.didUpdatedLocation = {
+            self.fetchWeather(defaultCity: self.currentLocation.suburbName)
+        }
     }
     
     func setupForecastTableViewCell() {
@@ -34,7 +41,7 @@ class HomeViewController: UIViewController {
         forecastTableView.isScrollEnabled = false
     }
     
-    func fetchWeather() {
+    func fetchWeather(defaultCity: String) {
         guard Reachability.isConnected() else {
             let messageLibrary = MessageLibrary(.network)
             self.showErrorMessage(library: messageLibrary)
